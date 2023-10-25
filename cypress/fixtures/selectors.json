@@ -1,0 +1,41 @@
+[
+  {
+    "loginButton": ".login__button"
+  },
+  {
+    "login": "[for='email'] > .login__input"
+  },
+  {
+    "pass": "[for='pwd'] > .login__input"
+  },
+  {
+    "title": ".page-header__title"
+  },
+  {
+    "week":".page-nav__day-week"
+  },
+  {
+    "day": ".page-nav__day-number"
+  },
+  {
+    "allday": ".page-nav__day"
+  },
+  {
+    "today": ".page-nav__day_today"
+  },
+  {
+    "film1": ":nth-child(1) > .movie__info > .movie__description > .movie__title"
+  },
+  {
+    "duration1": ":nth-child(1) > .movie__info > .movie__description > .movie__data > .movie__data-duration"
+  },
+  {
+    "film2": ":nth-child(2) > .movie__info > .movie__description > .movie__title"
+  },
+  {
+    "descrip2": ":nth-child(2) > .movie__info > .movie__description > .movie__synopsis"
+  },
+  {
+    "bookButton": ".acceptin-button"
+  }
+]
