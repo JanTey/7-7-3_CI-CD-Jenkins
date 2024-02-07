@@ -6,7 +6,7 @@ describe("movie tickets main and reservation screens", () => {
   });
   it("Should be enter the site", () => {
     cy.fixture("selectors").then((selector) => {
-      cy.get(selector[3].title).should("have.text", "Идёмвкино");
+      cy.get(selector[1].title).should("have.text", "Идёмвкино");
     });
   });
 
@@ -29,7 +29,7 @@ describe("movie tickets main and reservation screens", () => {
   tests.forEach((test) => {
     it.only(test.name, () => {
       cy.get('.page-nav__day').eq(3).click();
-      cy.get('main > :nth-child(3)').contains("12:00").click();
+      cy.get('main > :nth-child(3)').contains("14:00").click();
 
       test.data.forEach((seat) => {
         cy.get(`.buying-scheme__wrapper > :nth-child(${seat.row}) > :nth-child(${seat.seat}`).click();
