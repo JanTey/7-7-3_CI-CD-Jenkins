@@ -4,7 +4,11 @@
   "description": "Любые вопросы по решению задач задавайте в чате учебной группы.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+
+    "test:sad": "npx cypress run --record --key fb7764f2-0ffb-4a28-8a67-efd9ca343963 --group sad --spec \"cypress/e2e/sad.login.cy.js\" --ci-build-id 5",
+    "test:tickets": "npx cypress run --record --key fb7764f2-0ffb-4a28-8a67-efd9ca343963 --group tickets --spec \"cypress/e2e/movietickets.cy.js\" --ci-build-id 5",
+    "test:parallel": "npx run test:sad & test:tickets"
+
   },
   "keywords": [],
   "author": "",
