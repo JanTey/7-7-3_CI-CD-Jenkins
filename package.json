@@ -4,16 +4,15 @@
   "description": "Любые вопросы по решению задач задавайте в чате учебной группы.",
   "main": "index.js",
   "scripts": {
-
-    "test:sad": "npx cypress run --record --key fb7764f2-0ffb-4a28-8a67-efd9ca343963 --group sad --spec \"cypress/e2e/sad.login.cy.js\" --ci-build-id 5",
-    "test:tickets": "npx cypress run --record --key fb7764f2-0ffb-4a28-8a67-efd9ca343963 --group tickets --spec \"cypress/e2e/movietickets.cy.js\" --ci-build-id 5",
-    "test:parallel": "npx run test:sad & test:tickets"
-
+    "test:spec1": "npx cypress run --record --key 6c9e729d-8158-469f-9065-2fbbb997bd79 --group spec1 --spec 'cypress/e2e/sad.login.cy.js' --ci-build-id 16 --browser chrome",
+    "test:spec2": "npx cypress run --record --key 6c9e729d-8158-469f-9065-2fbbb997bd79 --group spec2 --spec 'cypress/e2e/movietickets.cy.js'  --ci-build-id 16 --browser chrome",
+    "test:parallel": "run-p -c test:spec1 test:spec2"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.6.4"
+    "cypress": "^13.6.4",
+    "npm-run-all": "^4.1.5"
   }
 }

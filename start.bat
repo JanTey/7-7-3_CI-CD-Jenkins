@@ -1,2 +1,2 @@
-start /b npx cypress run --record --key fb7764f2-0ffb-4a28-8a67-efd9ca343963 --group sad --spec "cypress/e2e/sad.login.cy.js" --ci-build-id 4
-start /b npx cypress run --record --key fb7764f2-0ffb-4a28-8a67-efd9ca343963 --group tickets --spec "cypress/e2e/movietickets.cy.js" --ci-build-id 4
+start /b npx cypress run --record --key 6c9e729d-8158-469f-9065-2fbbb997bd79 --group sad --spec "cypress/e2e/sad.login.cy.js" --ci-build-id 4
+start /b npx cypress run --record --key 6c9e729d-8158-469f-9065-2fbbb997bd79 --group tickets --spec "cypress/e2e/movietickets.cy.js" --ci-build-id 4
