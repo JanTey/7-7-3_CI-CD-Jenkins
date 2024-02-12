@@ -4,8 +4,8 @@
   "description": "Любые вопросы по решению задач задавайте в чате учебной группы.",
   "main": "index.js",
   "scripts": {
-    "test:spec1": "npx cypress run --record --key 6c9e729d-8158-469f-9065-2fbbb997bd79 --group spec1 --spec 'cypress/e2e/sad.login.cy.js' --ci-build-id 16 --browser chrome",
-    "test:spec2": "npx cypress run --record --key 6c9e729d-8158-469f-9065-2fbbb997bd79 --group spec2 --spec 'cypress/e2e/movietickets.cy.js'  --ci-build-id 16 --browser chrome",
+    "test:spec1": "npx cypress run --record --group spec1 --spec 'cypress/e2e/sad.login.cy.js' --browser chrome",
+    "test:spec2": "npx cypress run --record --group spec2 --spec 'cypress/e2e/movietickets.cy.js' --browser chrome",
     "test:parallel": "run-p -c test:spec1 test:spec2"
   },
   "keywords": [],
