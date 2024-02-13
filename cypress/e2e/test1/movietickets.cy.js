@@ -1,4 +1,4 @@
-import tests from '../fixtures/seats-param';
+import tests from '../../fixtures/seats-param';
 
 describe("movie tickets main and reservation screens", () => {
   beforeEach(() => {

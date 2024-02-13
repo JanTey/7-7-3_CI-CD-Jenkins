@@ -1,5 +1,5 @@
-import login from '../fixtures/logadmin.json';
-import selector from '../fixtures/selectors-login.json';
+import login from "../../fixtures/logadmin.json";
+import selector from "../../fixtures/selectors-login.json";
 
 describe("Log in for admin tests", () => {
     beforeEach(function () {
